@@ -1,0 +1,125 @@
+.faq {
+    padding: 20px 0 10vh;
+    position: relative;
+    min-height: 100vh;
+    box-shadow: 0 -3px 28px 2px rgb(0 0 0 / 52%);
+    z-index: 1;
+}
+
+.faq__bg {
+    background: linear-gradient(79deg, rgb(37 2 68) 13%, rgb(9 33 78) 81%);
+    background-size: 100% 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.faq::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.faq__inner-title {
+    margin: 15px auto 30px;
+    font-weight: 900;
+    position: relative;
+    color: #ffffff;
+    font-size: 4rem;
+    font-family: Blacky;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.faq__inner-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 15px 0 30px;
+}
+
+.faq__inner-questionIcon {
+    margin: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #44426d;
+    color: #fff;
+    transform: rotate(45deg);
+    font-size: 29px;
+}
+
+.faq__inner-questionIcon svg {
+    transform: rotate(-45deg);
+    display: flex;
+}
+
+.accordion__item-header {
+    background: #ffffff33;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 8px;
+    font-family: Regular;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.faq__accordion-item {
+    margin: 25px 0;
+    width: 47%;
+    width: 32%;
+    margin: 7px 0;
+    width: 80%;
+}
+
+.accordion__item-content {
+    padding: 15px 20px 20px;
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+    display: none;
+}
+
+.accordion__item-header:hover {
+    box-shadow: 2px 2px 5px 0px #000000;
+    transition: .4s;
+}
+
+.faq__accordion-item.active .accordion__item-header {
+    border-radius: 8px 8px 0 0;
+    background-color: #066e73;
+}
+
+.faq__accordion-item.active .accordion__item-header:hover {
+    box-shadow: none;
+}
+
+.faq__inner-accordion {
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.faq__accordion-item.active .accordion__item-header .accordion__header-icon {
+    transform: rotate(89deg) translateY(3px);
+    transition: .4s;
+}
+
+.accordion__header-icon {
+    transition: .4s;
+}

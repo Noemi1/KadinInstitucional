@@ -1,0 +1,30 @@
+<section id="faq" class="faq">
+    <div class="faq__bg"></div>
+    <div class="wrapper">
+        <div class="faq__inner">
+            <h3 class="faq__inner-title">Duvidas Frequentes</h3>
+            <p class="faq__inner-subtitle">
+                <span class="text-right">Lorem ipsum dolor sit amet consectetur </span>
+                <span class="faq__inner-questionIcon">
+                    <i class="fas fa-question"></i>
+                </span>
+                <span class="text-left">Lorem ipsum dolor sit amet consectetur </span>
+            </p>
+            <div class="faq__inner-accordion">
+                <div *ngFor="let item of [0,1,2,3,4,5,6,7,8,9]" class="faq__accordion-item" #accordionItem>
+                    <header class="accordion__item-header" (click)="toggleAccordion(accordionItem)" *ngIf="item % 2 == 0" data-aos="zoom-in-left" data-aos-offset="300">
+                        <h4>Lorem ipsum? {{ item }}</h4>
+                        <span class="accordion__header-icon"><i class="fas fa-chevron-right"></i></span>
+                    </header>
+                    <header class="accordion__item-header" (click)="toggleAccordion(accordionItem)" *ngIf="item % 2 != 0" data-aos="zoom-in-right" data-aos-offset="300">
+                        <h4>Lorem ipsum? {{ item }}</h4>
+                        <span class="accordion__header-icon"><i class="fas fa-chevron-right"></i></span>
+                    </header>
+                    <article class="accordion__item-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In aperiam eos vero, illum laboriosam incidunt odit ipsa earum qui expedita, ad, ducimus eius rerum delectus pariatur laborum assumenda minus. Consequatur.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

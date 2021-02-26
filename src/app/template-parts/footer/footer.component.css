@@ -1,0 +1,59 @@
+.footer {
+    /* height: 150px; */
+    background: #d6b1ce;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.footer__copiright {
+    background: linear-gradient(155deg, rgb(38 1 68) 13%, rgb(9 33 78) 81%);
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* Btn scroll top */
+
+.content-scroll-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.content-scroll-top.hidden {
+    bottom: -60vh;
+    transition: 1s;
+    opacity: 0;
+}
+
+.content-scroll-top.visible {
+    bottom: 0;
+    transition: 1s;
+    opacity: 1;
+}
+
+.btn-scrollTop {
+    display: block;
+    position: relative;
+    margin: 0 20px 20px auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background: linear-gradient(155deg, rgb(38 1 68) 40%, rgb(9 33 78) 100%);
+    background-size: 200%;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.btn-scrollTop:hover {
+    width: 43px;
+    height: 43px;
+    background: linear-gradient(155deg, rgb(38 1 68) 10%, rgb(9 33 78) 20%);
+    transition: .3s;
+}

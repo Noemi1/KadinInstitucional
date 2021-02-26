@@ -1,0 +1,22 @@
+<section id="servicos" class="servicos">
+    <div class="wrapper">
+        <div class="servicos__inner">
+            <h3 data-aos="fade-up">Conheça
+                <span class="text-diferent" data-aos="fade-up">nossos serviços</span>:
+            </h3>
+            <p data-aos="fade-up">Para nós, o trabalho significa entregar valor e auxiliar nosso cliente. Queremos conhecer os resultados almejados pelo cliente, que justificam o nosso serviço. Sendo assim, podemos maximizar nossos resultados trazendo satisfação aos nossos
+                clientes.
+            </p>
+
+            <div class="servicos__card">
+                <div *ngFor="let item of this.servicos" class="servicos__card-item" data-aos="fade-up">
+                    <!-- <div class="servicos__item-img" style="background-image: url(./../../../assets/img/servicos/{{item.Imagem}});"></div> -->
+                    <div class="servicos__item-content">
+                        <p> {{ item.Nome }} {{ item.Id }} </p>
+                        <button class="btn btn-saibaMais">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,38 @@
+<section id="clientes" class="clientes">
+    <div class="wrapper">
+        <div class="clientes__inner">
+            <h3 class="clientes__inner-title" data-aos="fade-up">Nossos clientes</h3>
+            <p data-aos="fade-up">Essencial para a nossa forma de trabalhar é o nosso foco na construção de relações fortes com os nossos clientes.
+            </p>
+            <p data-aos="fade-up">Acreditamos que podemos apoiá-lo melhor quando entendemos seus objetivos de negócios e também conhecendo-os melhor.</p>
+            <p data-aos="fade-up">Ouvimos quando trabalhamos junto com nossos clientes e nós também prestamos muita atenção ao que eles tem a nos dizer.</p>
+            <p data-aos="fade-up"><strong>Alguns de nossos clientes:</strong></p>
+
+            <!-- <div class="clientes__inner-clientes">
+                <div *ngFor="let item of this.clientes" class="clientes__item">
+                    <div class="clientes__item-text" [attr.data-aos]="item.AnimationAOS">
+                        <h3>
+                            <span class="clientes__numero"> {{ item.Id }} </span>
+                            <span> {{ item.Nome }} </span>
+                        </h3>
+                        <p> {{ item.Descricao }}
+                        </p>
+                    </div>
+                    <div class="clientes__item-logo" [attr.data-aos]="item.AnimationAOS">
+                        <img src="./../../assets/img/clientes/{{ item.Logo }}" alt="Logo {{ item.Nome }}">
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="clientes__items">
+        <div class="wrapper">
+            <div class="clientes__items-inner">
+                <div class="clientes__items-img" *ngFor="let item of this.clientes">
+                    <img src="./../../../assets/img/clientes/{{item.Logo}}" data-aos="fade-left">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

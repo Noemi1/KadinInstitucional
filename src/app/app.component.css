@@ -1,0 +1,18 @@
+.main {
+    /* transform: translateY(-70px); */
+    overflow-x: hidden;
+}
+
+.elemento-flutuante {
+    position: fixed;
+    z-index: 0;
+    width: 40px;
+    height: 40px;
+    transition: 20s;
+}
+
+.elemento-flutuante img {
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+}

@@ -1,0 +1,90 @@
+.servicos {
+    padding: 60px 0;
+    background: linear-gradient(155deg, rgb(0 17 49) 13%, rgb(9 33 78) 81%);
+}
+
+.servicos__inner>h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 4rem;
+    font-family: Bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #260144;
+}
+
+.servicos__inner>p {
+    color: #fff;
+    text-align: center;
+    margin: 25px auto;
+    max-width: 800px;
+    width: 90%;
+    font-family: ExtraLight;
+    letter-spacing: 1px;
+}
+
+.servicos__card {
+    margin: 20px 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicos__card-item {
+    width: 240px;
+    background-color: #b3c3e2;
+    margin: 20px 35px;
+    padding: 25px 25px;
+    position: relative;
+    box-shadow: 2px 2px 7px 2px #000000c9;
+    border-radius: 10px;
+    color: #000;
+}
+
+.servicos__card-item:hover {
+    transform: scale(1.04)!important;
+    transition: 0.2s!important;
+}
+
+.servicos__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 0;
+    background-size: contain;
+    background-position: top;
+}
+
+.servicos__item-content {
+    position: static;
+    z-index: 1;
+    color: #000;
+}
+
+.servicos__item-content p {
+    text-align: center;
+    font-family: Medium;
+    color: #021436;
+}
+
+.servicos__item-content .btn-saibaMais {
+    background-color: #260144;
+    margin: 25px auto 0;
+    display: flex;
+    border: 1px #260144 solid;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    word-spacing: 2px;
+    transition: .2s;
+}
+
+.servicos__item-content .btn-saibaMais:hover {
+    background-color: #09214e;
+    border: 1px #09214e solid;
+    transition: .2s;
+}

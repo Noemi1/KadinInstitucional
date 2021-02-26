@@ -1,1 +1,158 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Thin;
+    src: url(./assets/fonts/Heebo-Thin.ttf);
+}
+
+@font-face {
+    font-family: ExtraLight;
+    src: url(./assets/fonts/Heebo-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Light;
+    src: url(./assets/fonts/Heebo-Light.ttf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(./assets/fonts/Heebo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Medium;
+    src: url(./assets/fonts/Heebo-Medium.ttf);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(./assets/fonts/Heebo-Bold.ttf);
+}
+
+@font-face {
+    font-family: SemiBold;
+    src: url(./assets/fonts/Heebo-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: ExtraBold;
+    src: url(./assets/fonts/Heebo-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Blacky;
+    src: url(./assets/fonts/Heebo-Black.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Regular;
+    color: #000;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+button {
+    border-style: solid;
+    padding: 6px 12x;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-self: center;
+    cursor: pointer
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+*:not(input):focus {
+    outline: none;
+}
+
+
+/* 
+*.hidden,
+*[hidden] {
+    opacity: 0;
+
+} */
+
+input,
+textarea,
+select {
+    width: 100%;
+    background-color: #fdfdfd;
+    padding: 8px 8px 8px 8px;
+    border: 1px #c7c7c7 solid;
+    border-radius: 3px;
+    color: #000;
+    font-size: 1.6rem;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+input[readonly],
+input[disabled] {
+    background-color: #e6e6e6;
+    box-shadow: inset 0px 0px 5px -2px rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+
+input.touched[required]:invalid {
+    border: 1px red solid;
+}
+
+input.touched[required]:valid {
+    border: 1px green solid;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.input-container {
+    display: flex;
+    flex-flow: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-style: solid;
+    padding: 6px 12px;
+}

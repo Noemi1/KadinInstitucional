@@ -1,0 +1,27 @@
+<section id="processo" class="processo">
+    <div class="wrapper" style="max-width: 1300px;">
+        <div class="processo__inner">
+            <h3>Mapa de Processo</h3>
+            <div class="processo__mapa">
+                <div class="processo__mapa-item processo__mapa-item-{{item.Id}}" *ngFor="let item of this.processos">
+                    <div class="mapa__item-img" data-aos="fade-down">
+                        <img src="./../../../assets/img/processos/{{item.Imagem}}" alt="Imagem do processo {{item.Nome}}">
+                    </div>
+                    <div class="mapa__item-text" data-aos="fade-down">
+                        <h3 class="mapa__item-title">
+                            <span class="mapa__item-title-number"> {{ item.Id }} </span>
+                            <span> {{ item.Nome }} </span>
+                        </h3>
+                        <p>{{ item.Descricao }}</p>
+                    </div>
+                    <span class="setas setas-{{i}}" *ngFor="let i of [1,2]" data-aos="fade-left">
+                        <fa-icon [icon]="arrow"></fa-icon>
+                    </span>
+                    <span class="linhas linhas-{{i}}" *ngFor="let i of [1,2]" data-aos="fade-ip"></span>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
